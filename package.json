@@ -1,6 +1,8 @@
 {
     "private": true,
     "scripts": {
+        "test": "cross-env NODE_ENV=test jest",
+        "tdd": "npm run test -- --watch --notify",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
@@ -10,12 +12,21 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
         "axios": "^0.19",
+        "babel-jest": "^26.0.1",
         "cross-env": "^7.0",
+        "jest": "^26.0.1",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
-        "sass-loader": "^8.0.0"
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "postcss-import": "^12.0.1",
+        "tailwindcss": "^1.4.6"
     }
 }

@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->instance(\GuzzleHttp\Client::class, new \GuzzleHttp\Client([
+            'base_url' => '',
+            'timeout'  => 2.0
+        ]));
     }
 
     /**

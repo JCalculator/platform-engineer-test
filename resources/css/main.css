@@ -1,0 +1,81 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.productionCard {
+    @apply rounded border-orange-600 border shadow-lg m-5 mt-2 text-left;
+}
+
+.productionCard .titleBox {
+    @apply relative pl-2 border-b border-gray-200 bg-orange-500 text-white;
+}
+
+.productionCard .titleBox .title {
+    @apply text-2xl p-2 pt-10 font-bold;
+}
+
+.productionCard .titleBox .type {
+    @apply absolute right-0 top-0 p-1 mt-2 rounded border-b border-l border-white bg-white text-orange-500 text-xs  rounded-br-none rounded-tr-none;
+}
+
+.productionCard .sites .top-right-badge {
+    @apply absolute right-0 font-semibold top-0 p-1 rounded border-b border-l border-gray-200 bg-orange-500 text-white text-xs rounded-t-none rounded-br-none;
+}
+
+.productionCard .sites .site {
+    @apply relative border-b border-orange-600 m-2 p-1;
+}
+
+.form-control-error-message {
+    @apply text-red-500 text-xs italic;
+}
+.form-control {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight;
+}
+
+.form-control:focus {
+    @apply outline-none bg-white border-gray-500;
+}
+
+.form-control.error {
+    @apply border-red-500 mb-3;
+}
+
+
+
+/* This is from loading.io */
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #ed8936;
+    border-color: #ed8936 transparent #ed8936 transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "1ebc9653d75f416e05377b65f211008e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -683,6 +683,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -729,7 +730,62 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kepka42/laravel-mapper",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kepka42/laravel-mapper.git",
+                "reference": "f6854eedb2c957bd4862b9055e1e5b76cceafb76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kepka42/laravel-mapper/zipball/f6854eedb2c957bd4862b9055e1e5b76cceafb76",
+                "reference": "f6854eedb2c957bd4862b9055e1e5b76cceafb76",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "laravel/laravel": ">=5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "kepka42\\LaravelMapper\\MapperServiceProvider"
+                    ],
+                    "aliases": {
+                        "Mapper": "kepka42\\LaravelMapper\\Facades\\Mapper"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kepka42\\LaravelMapper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladislav Nevzorov",
+                    "email": "kepka4242@gmail.com"
+                }
+            ],
+            "description": "Package for map data",
+            "keywords": [
+                "laravel",
+                "map",
+                "mapper"
+            ],
+            "time": "2019-01-28T03:30:48+00:00"
         },
         {
             "name": "laravel/framework",
