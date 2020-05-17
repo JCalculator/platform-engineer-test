@@ -10,7 +10,7 @@ const Templates = {
 const TemplateHtmlCollection = {}
 
 TemplateHtmlCollection[Templates.emptyProductions] = `
-<div class="h-full text-3xl text-white pt-5">
+<div id="noProductionsFound" class="h-full text-3xl text-white pt-5">
   <span class="material-icons text-yellow-400 text-white text-6xl w-full">
     warning
   </span>

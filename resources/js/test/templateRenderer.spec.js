@@ -17,6 +17,13 @@ const production = {
 
 const container = document.createElement('div');
 
+test('it can render an empty production message', () => {
+  TemplateRenderer.render(Templates.emptyProductions, [], container);
+  const elementCollection = container.querySelectorAll('#noProductionsFound');
+  expect(elementCollection.length).toBe(1);
+  expect(elementCollection[0].innerHTML.match(/No productions were found/)).toBeTruthy();
+});
+
 test('it can render a production', () => {
 
   TemplateRenderer.render(Templates.production, [production], container);
